@@ -827,7 +827,16 @@
 
         <!-- Tab: Analysis -->
         <section id="tab-analysis" class="tab-content h-full p-10 overflow-y-auto hidden" role="tabpanel" aria-labelledby="btn-tab-analysis">
-            <div class="max-w-[1600px] mx-auto space-y-10 pb-20">
+<div class="glass p-6 rounded-2xl border border-amber-500/30 mb-6">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                <div>
+                    <div class="text-sm font-bold text-amber-300">Single-Trial Evidence Base</div>
+                    <div class="text-xs text-slate-400">This topic currently has only one randomized controlled trial with comparative data. Meta-analytic pooling requires &ge;2 trials. The analysis shows descriptive statistics for the single available RCT. As new trials publish, the living update system will detect them and enable pooling.</div>
+                </div>
+            </div>
+        </div>
+<div class="max-w-[1600px] mx-auto space-y-10 pb-20">
                 <div class="grid grid-cols-3 gap-8" aria-live="polite" aria-atomic="true">
                     <div class="glass p-8 rounded-[40px] border-l-[8px] border-blue-500 bg-blue-500/5 text-center"><div id="label-pooled-em" class="text-[10px] opacity-50 uppercase font-bold mb-3 tracking-[0.2em]">Pooled Primary Effect (HR/RR)</div><div id="res-or" aria-label="Pooled effect estimate" class="text-6xl font-bold font-mono tracking-tighter">--</div></div>
                     <!-- label updated dynamically by setEffectMeasure/updateEMLabels -->
@@ -1524,7 +1533,7 @@
             return safe;
         };
 
-        const AUTO_INCLUDE_TRIAL_IDS = new Set(['NCT04221490']);
+        const AUTO_INCLUDE_TRIAL_IDS = new Set(['NCT03904147']);
         const isPhaseTwoLike = (phaseLabel = '') => {
             const p = String(phaseLabel ?? '').toLowerCase().trim();
             if (!p) return false;
@@ -1967,7 +1976,7 @@
 
             // ISSUE 10 FIX: Corrected ARTS-DN Metadata (Phase IIb)
             /* Known acronyms for trials whose CT.gov search may not return the acronym field */
-            nctAcronyms: { 'NCT04221490': 'TRILUMINATE', 'NCT04097145': 'CLASP TR' },
+            nctAcronyms: { 'NCT03904147': 'TRILUMINATE', 'NCT04097145': 'CLASP TR' },
             _allowedSources: new Set(['registry', 'pubmed', 'openalex', 'reference', 'manual']),
             _allowedStatuses: new Set(['search', 'include', 'exclude']),
             sanitizeText(value, maxLen = 600) {
@@ -2297,16 +2306,16 @@
             // publishedHR stores the published effect estimate — for FINEARTS this is a rate ratio (RR),
             // not a hazard ratio; see estimandType:'RR'. HR-only analyses filter on estimandType.
             realData: {
-                'NCT04221490': {
+                'NCT03904147': {
                     name: 'TRILUMINATE Pivotal', phase: 'III', year: 2023,
                     tE: 152, tN: 175, cE: 8, cN: 175, group: 'TriClip vs Medical Therapy',
                     rob: ['low', 'low', 'some', 'low', 'low'],
-                    snippet: 'Sorajja P et al. NEJM 2023;389:1938-1950. RCT (n=350). TEER 87.0% vs Control 4.8% TR reduction at 12m.',
+                    snippet: 'Source: NCT03904147 (ClinicalTrials.gov). Abbott Medical Devices TRILUMINATE Pivotal RCT (n=572 enrolled, 350 randomized). Data from Sorajja et al. NEJM 2023;389:1938-1950.',
                     sourceUrl: 'https://www.nejm.org/doi/10.1056/NEJMoa2300525',
                     evidence: [
                         { label: 'Enrollment & Randomization', source: 'Sorajja P et al. NEJM 2023;389:1938-1950, Fig 1 (CONSORT)', text: 'A total of 350 patients were enrolled; 175 were randomized to transcatheter tricuspid-valve repair with the TriClip device and 175 to medical therapy alone.', highlights: ['350', '175', '175', 'TriClip'] },
                         { label: 'Primary Outcome (TR Reduction)', source: 'Sorajja P et al. NEJM 2023;389:1938-1950, Table 2', text: 'At 1 year, 87.0% of patients in the TriClip group had TR of moderate or less (TR ≤ 2+), compared with 4.8% in the control group. Events: 152 of 175 in the device arm achieved TR reduction.', highlights: ['87.0%', '152', '175', '4.8%'] },
-                        { label: 'RoB Assessment', source: 'NCT04221490 (ClinicalTrials.gov)', text: 'Randomized, controlled, multicenter trial. Open-label design (D2: some concerns due to knowledge of assigned intervention). Central adjudication of echocardiographic endpoints.', highlights: ['Randomized', 'Open-label', 'some concerns'] }
+                        { label: 'RoB Assessment', source: 'NCT03904147 (ClinicalTrials.gov)', text: 'Randomized, controlled, multicenter trial. Open-label design (D2: some concerns due to knowledge of assigned intervention). Central adjudication of echocardiographic endpoints.', highlights: ['Randomized', 'Open-label', 'some concerns'] }
                     ]
                 },
                 'NCT04097145': {
