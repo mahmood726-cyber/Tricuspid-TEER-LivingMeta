@@ -1,0 +1,24 @@
+[
+  {
+    "author": "Andrews",
+    "year": "2026",
+    "title": "Real-World Suitability of Patients for Transcatheter Tricuspid Valve Replacement.",
+    "device": "TEER",
+    "n": 251,
+    "tr_post": null,
+    "success": null,
+    "tr_pre": null,
+    "abstract_snippet": "Transcatheter tricuspid valve replacement (TTVR) has shown therapeutic promise for patients with severe tricuspid regurgitation (TR). However, some patients may not be eligible due to anatomic limitat"
+  },
+  {
+    "author": "Razavi",
+    "year": "2025",
+    "title": "Impact of Transcatheter Tricuspid Valve Repair on Pre- and Post-Procedural Hospitalization Rates.",
+    "device": "TEER",
+    "n": 487,
+    "tr_post": null,
+    "success": null,
+    "tr_pre": null,
+    "abstract_snippet": "The effectiveness of tricuspid transcatheter edge-to-edge repair (TEER) in reducing heart failure (HF) hospitalizations is unclear. Using Medicare and Medicaid data (2015-2019), 487 patients undergoin"
+  }
+]

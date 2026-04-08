@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this project, please cite it as below."
+type: software
+title: "RapidMeta Cardiology - Tricuspid TEER Living Meta"
+license: MIT
+abstract: >-
+  Browser-based living meta-analysis workspace for tricuspid transcatheter
+  edge-to-edge repair outcomes.
+keywords:
+  - living meta-analysis
+  - cardiology
+  - tricuspid regurgitation
+  - TEER
+authors:
+  - family-names: Ahmad
+    given-names: Mahmood
+preferred-citation:
+  type: software
+  title: "RapidMeta Cardiology - Tricuspid TEER Living Meta"
+  authors:
+    - family-names: Ahmad
+      given-names: Mahmood
+  year: 2026
