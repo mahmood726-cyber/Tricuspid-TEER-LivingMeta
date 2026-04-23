@@ -344,12 +344,12 @@
                         <button onclick="ExtractEngine.addManual()" class="bg-emerald-600 hover:bg-emerald-500 text-white px-6 py-2 rounded-xl text-xs font-bold shadow-lg transition-all"><i class="fa-solid fa-plus mr-1"></i>Add Study</button>
                     </div>
                     <div class="p-5 entry-row grid grid-cols-7 gap-3">
-                        <div><label class="text-[9px] opacity-50 uppercase font-bold block mb-1">Study Name</label><input id="entry-name" type="text" placeholder="e.g. TRILUMINATE 2" class="w-full"></div>
+                        <div><label class="text-[9px] opacity-50 uppercase font-bold block mb-1">Study Name</label><input id="entry-name" type="text" aria-label="e.g. TRILUMINATE 2" placeholder="e.g. TRILUMINATE 2" class="w-full"></div>
                         <div><label class="text-[9px] opacity-50 uppercase font-bold block mb-1">Year</label><input id="entry-year" type="number" value="2025" class="w-full"></div>
                         <div><label class="text-[9px] opacity-50 uppercase font-bold block mb-1">Device</label><select id="entry-device" class="w-full"><option>TriClip</option><option>PASCAL</option><option>Other</option></select></div>
-                        <div><label class="text-[9px] opacity-50 uppercase font-bold block mb-1">N</label><input id="entry-n" type="number" placeholder="0" class="w-full"></div>
-                        <div><label class="text-[9px] opacity-50 uppercase font-bold block mb-1">Events (TR&le;2+)</label><input id="entry-events" type="number" placeholder="0" class="w-full"></div>
-                        <div><label class="text-[9px] opacity-50 uppercase font-bold block mb-1">Source</label><input id="entry-snippet" type="text" placeholder="Author et al. Year" class="w-full"></div>
+                        <div><label class="text-[9px] opacity-50 uppercase font-bold block mb-1">N</label><input id="entry-n" type="number" aria-label="0" placeholder="0" class="w-full"></div>
+                        <div><label class="text-[9px] opacity-50 uppercase font-bold block mb-1">Events (TR&le;2+)</label><input id="entry-events" type="number" aria-label="0" placeholder="0" class="w-full"></div>
+                        <div><label class="text-[9px] opacity-50 uppercase font-bold block mb-1">Source</label><input id="entry-snippet" type="text" aria-label="Author et al. Year" placeholder="Author et al. Year" class="w-full"></div>
                         <div><label class="text-[9px] opacity-50 uppercase font-bold block mb-1">Design</label><select id="entry-design" class="w-full"><option>RCT</option><option>Single-arm</option><option>Registry</option><option>Retrospective</option></select></div>
                     </div>
                 </div>
@@ -483,8 +483,8 @@
                             <button onclick="SensitivityEngine.run()" class="text-[9px] bg-amber-600 hover:bg-amber-500 px-3 py-1 rounded-lg font-bold transition-all">Re-Analyse</button>
                         </div>
                         <div class="flex flex-wrap gap-4 text-xs">
-                            <label class="flex items-center gap-2 cursor-pointer"><input type="checkbox" id="sens-rob" class="accent-amber-500"> Exclude high-RoB (\u22652 domains)</label>
-                            <label class="flex items-center gap-2 cursor-pointer"><input type="checkbox" id="sens-outlier" class="accent-amber-500"> Exclude influential outliers</label>
+                            <label class="flex items-center gap-2 cursor-pointer"><input type="checkbox" id="sens-rob" class="accent-amber-500" aria-label="Exclude high-RoB (\u22652 domains)"> Exclude high-RoB (\u22652 domains)</label>
+                            <label class="flex items-center gap-2 cursor-pointer"><input type="checkbox" id="sens-outlier" class="accent-amber-500" aria-label="Exclude influential outliers"> Exclude influential outliers</label>
                             <label class="flex items-center gap-2 cursor-pointer"><input type="checkbox" id="sens-small" class="accent-amber-500"> Exclude small N &lt; <input type="number" id="sens-small-n" value="50" min="10" max="500" step="10" class="w-14 bg-slate-900 border border-slate-700 text-center text-xs rounded px-1 py-0.5"></label>
                         </div>
                         <div id="sens-results" class="text-xs font-mono text-slate-400"></div>
