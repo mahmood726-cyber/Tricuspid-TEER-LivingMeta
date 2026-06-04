@@ -1,0 +1,8 @@
+{
+  "drug": "Tricuspid TEER",
+  "drug_lower": "tricuspid teer",
+  "condition": "Adults with severe tricuspid regurgitation",
+  "slug": "tricuspid_teer",
+  "source_repo": "C:\\Projects\\Tricuspid-TEER-LivingMeta",
+  "source_html": "TRICUSPID_TEER_REVIEW.html"
+}
